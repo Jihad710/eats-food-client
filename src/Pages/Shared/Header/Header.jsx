@@ -53,7 +53,8 @@ const Header = () => {
                             }
 
 {
-                              
+                                user ? <Button onClick={handleLogOut} className='bg-dark bg-gradient fw-semibold
+                                ms-3 '>Logout</Button> : <Link to={`/login`}><Button className='fw-semibold' variant='warning'>Login</Button></Link>
                             }
                             
                         </Nav>
