@@ -1,0 +1,51 @@
+[
+    {
+    "id": 1,
+    "name": "Gordon Ramsay",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Gordon_Ramsay_cooking_%28262930612%29.jpg",
+    "years_of_experience": 35,
+      "number_of_recipes": 325,
+      "likes": 7500000
+  },
+    {
+    "id": 2,
+    "name": "Bobby Flay",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bobby_Flay_Green_Bay_2007.jpg/800px-Bobby_Flay_Green_Bay_2007.jpg",
+    "years_of_experience": 30,
+    "number_of_recipes": 140,
+    "likes": 2200000
+  },
+    {
+    "id": 3,
+    "name": "Ina Garten",
+    "photo_url": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2022-11/ina-garten-mc-221122-05-ae7968.jpg",
+    "years_of_experience": 40,
+    "number_of_recipes": 97,
+    "likes": 2300000
+  },
+    {
+    "id": 4,
+    "name": "Anthony Bourdain",
+    "photo_url": "https://people.com/thmb/OUu4rWgC68fiYRLsm2vu_ee6Nu4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2):format(webp)/anthony-bourdain-8-b8bbddf1d4f34897be970fd93845d0bd.jpg",
+    "years_of_experience": 40,
+    "num_recipes": 35,
+    "likes": 3700000
+  },
+    {
+    "id": 5,
+    "name": "Julia Child",
+    "photo_url": "https://i.insider.com/611441616fe08d0019979b97?width=1000&format=jpeg&auto=webp",
+    "years_of_experience": 40,
+    "num_recipes": 10,
+    "likes": 1500000
+  },
+    {
+    "id": 6,
+    "name": "Emeril Lagasse",
+    "photo_url": "https://cookingrush.net/wp-content/uploads/2023/02/Emeril-Lagasse-best-chefs.webp",
+    "years_of_experience": 40,
+    "num_recipes": 50,
+    "likes": 1100000
+  }
+  
+]
