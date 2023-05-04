@@ -20,6 +20,7 @@ import Terms from '../Pages/Terms/Terms';
 import Chefs from '../Pages/Home/Chefs/Chefs';
 import Recipes from '../Pages/ChefsRecipes/Chefsbanner/Recipe/Recipes/Recipes';
 import Blog from '../Pages/Blog/Blog';
+import PrivetRoute from './PrivetRouter';
 
 
 
@@ -77,7 +78,7 @@ import Blog from '../Pages/Blog/Blog';
       children:[
         {
           path:":id",
-          element:<Recipes></Recipes>,
+          element:<PrivetRoute><Recipes></Recipes></PrivetRoute>,
           loader:({params})=>fetch(`https://eats-food-server-site-jihad710.vercel.app/recipes/${params.id}`)
           //change link
 

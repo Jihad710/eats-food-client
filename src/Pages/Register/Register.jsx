@@ -7,6 +7,7 @@ import { updateProfile } from 'firebase/auth';
 import { toast } from 'react-hot-toast';
 
 
+
 const Register = () => {
     const {auth, user, loading, login, CreateUser, logOut, loginWithGoogle, loginWithGithub } = useContext(AuthContext)
     const [check, setCheck] = useState(false)
