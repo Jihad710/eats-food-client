@@ -25,7 +25,7 @@ const [favorite ,setFavorite] = useState(false)
                             <li key={index}>{ingredient}</li>
                         ))}
                     </ul>
-                    <p><small><span className='fw-semibold'>cooking_method :</span>{cooking_method.slice(0, 300)} {cooking_method.length > 300 && <>...</>}</small></p>
+                    <p><small><span className='fw-semibold'>cooking_method :</span>{cooking_method} {cooking_method> 300 && <>...</>}</small></p>
                     <div className=" d-flex">
                         <div className="flex-grow-1 d-flex align-items-center gap-2">
                             <small className="text-body-secondary"><ReactStarsRating value={Math.round(rating)} /></small>

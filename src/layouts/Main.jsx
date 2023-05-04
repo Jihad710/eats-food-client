@@ -4,8 +4,9 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Pages/Shared/Footer/Footer';
 import Banner from '../Pages/Home/Banner/Banner';
 import { Col, Container, Row } from 'react-bootstrap';
-import TrendyRecipes from '../Pages/Home/TrendyRecipes/TrendyRecipes';
+
 import Awarded from '../Pages/Home/Awarded/Awarded';
+import TrendyRecipes from '../Pages/Home/TrendyRecipes/TrendyRecipes';
 
 const Main = () => {
     return (

@@ -22,7 +22,7 @@ const Awarded = () => {
     },[chefs])
     return (
         <Container className='bg-secondary bg-gradient  bg-opacity-10 py-4 px-5'>
-            <h2>Mastering the Culinary Arts: Celebrating the Talents of an Awarded <span className='fw-bold'>Chef</span> </h2>
+            <h2 className='text-center'>Celebrating the Talents of an Awarded <span className='fw-bold'>Chef</span> </h2>
        
 
             

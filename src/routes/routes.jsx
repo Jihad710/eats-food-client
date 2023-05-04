@@ -59,7 +59,7 @@ import Recipes from '../Pages/ChefsRecipes/Chefsbanner/Recipe/Recipes/Recipes';
       
         path: "chefs",
         element: <Main></Main>,
-        loader:({params})=>fetch(`https://eats-food-server-site-jihad710.vercel.app/chefs`),
+        loader:({params})=>fetch(`https://eats-food-server-site-jihad710.vercel.app/recipes`),
         //change link
         children:[
           {
