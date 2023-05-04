@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, Col } from 'react-bootstrap';
+import { Button, Card, Col, Image } from 'react-bootstrap';
 import ReactStarsRating from 'react-awesome-stars-rating';
 import { toast } from 'react-hot-toast';
 
@@ -14,6 +14,7 @@ const [favorite ,setFavorite] = useState(false)
         <Col>
             <Card>
                 {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
+                <Image src={recipe?.photo_url} fluid rounded/>
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <p>

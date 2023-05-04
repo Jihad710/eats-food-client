@@ -3,7 +3,7 @@ import { Button, Container, Image, Nav, NavDropdown, Navbar, OverlayTrigger, Too
 import { Link, NavLink } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import { AuthContext } from '../../../provider/AuthProvider';
-import logo from '../../../assets/—Pngtree—healthy food logo design_7271690.png'
+import logo from '../../../assets/restaurant-logos-11551057140mksx6c81dz.png'
 const Header = () => {
     const {user, logOut} = useContext(AuthContext);
     
@@ -27,7 +27,7 @@ const Header = () => {
               height="50"
               className="d-inline-block align-top"
             />{' '}
-                    <Navbar.Brand  className='fw-semibold' ><span className='fw-bold'>E</span>ats <span className='fw-bold'>E</span>xtra</Navbar.Brand>
+                    <Navbar.Brand  className='fw-semibold' ><span className='fw-bold'>E</span>ats <span className='fw-bold'>F</span>ood</Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

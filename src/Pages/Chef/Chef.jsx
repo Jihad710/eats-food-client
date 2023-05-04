@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Button, Card, Image, ListGroup, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
+import LazyLoad from 'react-lazy-load';
 
 const Chef = ({ chef }) => {
     // const{loading} = useContext(AuthContext)
@@ -15,9 +16,10 @@ setTimeout(()=>{
     const { id, name, likes, num_recipes, photo_url, years_of_experience, awarded ,rating} = chef
     return (
         <div>
+            <LazyLoad height="100%" width="100%" threshold={0.95} >
 {
 
-loading ? <><Spinner animation="border" variant="warning" /><h2>Jihad</h2></> :
+loading ? <><Spinner animation="border" variant="warning" /><h2>Loading.......</h2></> :
             
             <Card className="text-center mb-4" style={{background: '#f7f7f7', backgroundRepeat: 'no-repeat' }}>
                 <div className='px-3 py-3'>
@@ -39,6 +41,7 @@ loading ? <><Spinner animation="border" variant="warning" /><h2>Jihad</h2></> :
                 <Card.Footer className="fs-5">Likes: <span className='fw-bold'>{likes}</span></Card.Footer>
             </Card>
 }
+</LazyLoad>
         </div>
     );
 };

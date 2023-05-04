@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Image } from 'react-bootstrap';
 import { FaAngleDoubleDown } from 'react-icons/fa';
+import LazyLoad from 'react-lazy-load';
 import { useLoaderData } from 'react-router-dom';
 
 const TrendyRecipes = () => {
@@ -20,6 +21,7 @@ const TrendyRecipes = () => {
                   'Light'
                   
                 ].map((variant) => (
+                  <LazyLoad threshold={0.95} height="100%" >
                   <Card border="warning"
                     bg={variant.toLowerCase()}
                     key={variant}
@@ -37,6 +39,7 @@ const TrendyRecipes = () => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
+                  </LazyLoad>
                 ))}
               </>)
         }
