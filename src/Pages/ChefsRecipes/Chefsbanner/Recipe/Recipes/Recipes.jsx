@@ -4,8 +4,9 @@ import { useLoaderData } from 'react-router-dom';
 
 
 import { CardGroup, Row } from 'react-bootstrap';
-
 import Recipe from '../Recipe';
+
+
 
 const Recipes = () => {
     const recipes = useLoaderData()
@@ -20,6 +21,7 @@ const Recipes = () => {
             
             {
                 recipes.map(recipe=><Recipe key={recipe.id} recipe ={recipe} ></Recipe>)
+                
             }
         </Row>
         </>

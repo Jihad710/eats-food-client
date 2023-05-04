@@ -24,6 +24,7 @@ import Recipes from '../Pages/ChefsRecipes/Chefsbanner/Recipe/Recipes/Recipes';
 
 
 
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -58,7 +59,7 @@ import Recipes from '../Pages/ChefsRecipes/Chefsbanner/Recipe/Recipes/Recipes';
       
         path: "chefs",
         element: <Main></Main>,
-        loader:({params})=>fetch(`https://eats-food-server-site.vercel.app/recipes`),
+        loader:({params})=>fetch(`https://eats-food-server-site-jihad710.vercel.app/chefs`),
         //change link
         children:[
           {
@@ -76,7 +77,7 @@ import Recipes from '../Pages/ChefsRecipes/Chefsbanner/Recipe/Recipes/Recipes';
         {
           path:":id",
           element:<Recipes></Recipes>,
-          loader:({params})=>fetch(`https://eats-food-server-site.vercel.app/recipes/${params.id}`)
+          loader:({params})=>fetch(`https://eats-food-server-site-jihad710.vercel.app/recipes/${params.id}`)
           //change link
 
           

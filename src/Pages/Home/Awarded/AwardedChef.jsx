@@ -22,6 +22,10 @@ const AwardedChef = ({ chef }) => {
               <Card.Text>
              
               </Card.Text>
+              
+              <Card.Text>Experience: {years_of_experience}</Card.Text>
+              <Card.Text>Ratings: {rating?.number}</Card.Text>
+
             </Card.Body>
           </div>
         </div>

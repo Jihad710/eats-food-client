@@ -10,7 +10,7 @@ const Chefs = () => {
     const [loading, setLoading ] = useState(true)
     useEffect(()=>{
         setLoading(true)
-        fetch(`https://eats-food-server-site.vercel.app/chefs`)
+        fetch(`https://eats-food-server-site-jihad710.vercel.app/chefs`)
         .then(res=>res.json())
         .then(data=>setChefs(data))
         .catch(error=>console.log(error))

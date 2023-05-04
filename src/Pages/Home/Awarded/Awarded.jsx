@@ -8,7 +8,7 @@ const Awarded = () => {
     const [chefs ,setChef] = useState([])
 
     useEffect(()=>{
-        fetch('https://eats-food-server-site.vercel.app/chefs')
+        fetch('https://eats-food-server-site-jihad710.vercel.app/chefs')
         .then(res=>res.json())
         .then(data=>setChef(data))
         .catch(error=>console.log(error))
