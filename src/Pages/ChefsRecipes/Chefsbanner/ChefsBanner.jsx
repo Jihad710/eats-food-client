@@ -10,7 +10,7 @@ const ChefsBanner = () => {
     const [chefs ,setChef] = useState([])
 
     useEffect(()=>{
-        fetch('https://eats-extra-server-rjk-jami.vercel.app/chefs')
+        fetch('')
         .then(res=>res.json())
         .then(data=>setChef(data))
         .catch(error=>console.log(error))

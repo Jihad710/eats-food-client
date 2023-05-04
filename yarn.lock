@@ -626,6 +626,32 @@
   "resolved" "https://registry.npmjs.org/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.10.0.tgz"
   "version" "0.10.0"
 
+"@fortawesome/fontawesome-common-types@6.4.0":
+  "integrity" "sha512-HNii132xfomg5QVZw0HwXXpN22s7VBHQBv9CeOu9tfJnhsWQNd2lmTNi8CSrnw5B+5YOmzu1UoPAyxaXsJ6RgQ=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.4.0.tgz"
+  "version" "6.4.0"
+
+"@fortawesome/fontawesome-svg-core@^6.4.0", "@fortawesome/fontawesome-svg-core@~1 || ~6":
+  "integrity" "sha512-Bertv8xOiVELz5raB2FlXDPKt+m94MQ3JgDfsVbrqNpLU9+UE2E18GKjLKw+d3XbeYPqg1pzyQKGsrzbw+pPaw=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.4.0.tgz"
+  "version" "6.4.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.4.0"
+
+"@fortawesome/free-solid-svg-icons@^6.4.0":
+  "integrity" "sha512-kutPeRGWm8V5dltFP1zGjQOEAzaLZj4StdQhWVZnfGFCvAPVvHh8qk5bRrU4KXnRRRNni5tKQI9PBAdI6MP8nQ=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.4.0.tgz"
+  "version" "6.4.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.4.0"
+
+"@fortawesome/react-fontawesome@^0.2.0":
+  "integrity" "sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.0.tgz"
+  "version" "0.2.0"
+  dependencies:
+    "prop-types" "^15.8.1"
+
 "@grpc/grpc-js@~1.7.0":
   "integrity" "sha512-H9l79u4kJ2PVSxUNA08HMYAnUBLj9v6KjYQ7SQ71hOZcEXhShE/y5iQCesP8+6/Ik/7i2O0a10bPquIcYfufog=="
   "resolved" "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.7.3.tgz"
@@ -1049,7 +1075,7 @@
     "ansi-styles" "^4.1.0"
     "supports-color" "^7.1.0"
 
-"classnames@^2.3.2":
+"classnames@^2.2.1", "classnames@^2.3.2":
   "integrity" "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
   "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   "version" "2.3.2"
@@ -2191,7 +2217,7 @@
     "react-is" "^16.3.2"
     "warning" "^4.0.0"
 
-"prop-types@^15.6.2", "prop-types@^15.8.1":
+"prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -2315,6 +2341,15 @@
   dependencies:
     "@remix-run/router" "1.6.0"
 
+"react-star-ratings@^2.3.0":
+  "integrity" "sha512-34Z/oFNDRRn4ZcX7F3t9ccnpo7SQ32gD/vsusQOBc6B6vlqaGR6tke1/Yx3jTDjemKRSmXqhKgpPTR7/JAXq6A=="
+  "resolved" "https://registry.npmjs.org/react-star-ratings/-/react-star-ratings-2.3.0.tgz"
+  "version" "2.3.0"
+  dependencies:
+    "classnames" "^2.2.1"
+    "prop-types" "^15.6.0"
+    "react" "^16.1.0"
+
 "react-style-normalizer@^1.2.8":
   "integrity" "sha512-smaq27S/Gfj08wsNvLuuA03SKr6K44BVZFyqQEBFyqlQ9MSUi6ydRoBfNcZQeIUNkjRxi1W97sNNs54zFqGC2Q=="
   "resolved" "https://registry.npmjs.org/react-style-normalizer/-/react-style-normalizer-1.2.8.tgz"
@@ -2337,12 +2372,21 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.2.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
+"react@*", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.2.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16", "react@>=16.14.0", "react@>=16.3", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"react@^16.1.0":
+  "integrity" "sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g=="
+  "resolved" "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
+  "version" "16.14.0"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
+    "prop-types" "^15.6.2"
 
 "regenerator-runtime@^0.13.11":
   "integrity" "sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg=="
